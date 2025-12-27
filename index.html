@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <h1><i class="fas fa-check-circle"></i> To-Do List</h1>
+            <p class="tagline">Stay organized and productive</p>
+        </header>
+
+        <main>
+            <form class="add-task-form">
+                <div class="input-wrapper">
+                    <input type="text" class="task-input" placeholder="What needs to be done?" disabled>
+                    <button type="submit" class="add-button" disabled>
+                        <i class="fas fa-plus"></i> Add
+                    </button>
+                </div>
+            </form>
+
+            <div class="tasks-container">
+                <ul class="task-list">
+                    <li class="task-item">
+                        <div class="task-content">
+                            <input type="checkbox" class="task-checkbox" disabled>
+                            <span class="task-text">Create HTML structure</span>
+                        </div>
+                        <button class="delete-btn" disabled>
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </li>
+
+                    <li class="task-item completed">
+                        <div class="task-content">
+                            <input type="checkbox" class="task-checkbox" checked disabled>
+                            <span class="task-text">Style with CSS and dark theme</span>
+                        </div>
+                        <button class="delete-btn" disabled>
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </li>
+
+                    <li class="task-item">
+                        <div class="task-content">
+                            <input type="checkbox" class="task-checkbox" disabled>
+                            <span class="task-text">Add JavaScript functionality</span>
+                        </div>
+                        <button class="delete-btn" disabled>
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="empty-state">
+                    <i class="fas fa-clipboard-list"></i>
+                    <p>All tasks completed! Add a new task above.</p>
+                </div>
+            </div>
+
+            <div class="app-controls">
+                <div class="task-counter">
+                    <span class="count-number">2</span> items left
+                </div>
+
+                <div class="filter-buttons">
+                    <button class="filter-btn active" disabled>All</button>
+                    <button class="filter-btn" disabled>Active</button>
+                    <button class="filter-btn" disabled>Completed</button>
+                </div>
+
+                <button class="clear-btn" disabled>
+                    <i class="fas fa-trash"></i> Clear Completed
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        console.log("To-Do App - HTML/CSS ready");
+    </script>
+</body>
+
+</html>
