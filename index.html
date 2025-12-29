@@ -17,75 +17,46 @@
         </header>
 
         <main>
-            <form class="add-task-form">
+            <form class="add-task-form" id="taskForm">
                 <div class="input-wrapper">
-                    <input type="text" class="task-input" placeholder="What needs to be done?" disabled>
-                    <button type="submit" class="add-button" disabled>
+                    <input type="text" class="task-input" id="taskInput"
+                        placeholder="What needs to be done? (Press Enter to add)" aria-label="New task input">
+                    <button type="submit" class="add-button" id="addButton">
                         <i class="fas fa-plus"></i> Add
                     </button>
                 </div>
+                <div class="error-message" id="errorMessage"></div>
             </form>
 
             <div class="tasks-container">
-                <ul class="task-list">
-                    <li class="task-item">
-                        <div class="task-content">
-                            <input type="checkbox" class="task-checkbox" disabled>
-                            <span class="task-text">Create HTML structure</span>
-                        </div>
-                        <button class="delete-btn" disabled>
-                            <i class="fas fa-times"></i>
-                        </button>
-                    </li>
-
-                    <li class="task-item completed">
-                        <div class="task-content">
-                            <input type="checkbox" class="task-checkbox" checked disabled>
-                            <span class="task-text">Style with CSS and dark theme</span>
-                        </div>
-                        <button class="delete-btn" disabled>
-                            <i class="fas fa-times"></i>
-                        </button>
-                    </li>
-
-                    <li class="task-item">
-                        <div class="task-content">
-                            <input type="checkbox" class="task-checkbox" disabled>
-                            <span class="task-text">Add JavaScript functionality</span>
-                        </div>
-                        <button class="delete-btn" disabled>
-                            <i class="fas fa-times"></i>
-                        </button>
-                    </li>
+                <ul class="task-list" id="taskList">
                 </ul>
 
-                <div class="empty-state">
+                <div class="empty-state" id="emptyState">
                     <i class="fas fa-clipboard-list"></i>
-                    <p>All tasks completed! Add a new task above.</p>
+                    <p>No tasks yet. Add one above!</p>
                 </div>
             </div>
 
             <div class="app-controls">
                 <div class="task-counter">
-                    <span class="count-number">2</span> items left
+                    <span class="count-number" id="taskCount">0</span>
+                    <span id="taskText">tasks left</span>
                 </div>
 
                 <div class="filter-buttons">
-                    <button class="filter-btn active" disabled>All</button>
-                    <button class="filter-btn" disabled>Active</button>
-                    <button class="filter-btn" disabled>Completed</button>
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="active">Active</button>
+                    <button class="filter-btn" data-filter="completed">Completed</button>
                 </div>
 
-                <button class="clear-btn" disabled>
+                <button class="clear-btn" id="clearCompleted">
                     <i class="fas fa-trash"></i> Clear Completed
                 </button>
             </div>
         </main>
     </div>
-
-    <script>
-        console.log("To-Do App - HTML/CSS ready");
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
