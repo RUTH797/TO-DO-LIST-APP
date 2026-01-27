@@ -1,0 +1,96 @@
+To-Do App Project
+Project Information
+Name:RUTH TARIKU
+Project Description
+This is a simple to-do list application built using HTML, CSS, and JavaScript. It allows users to add, complete, delete, and filter tasks. Tasks are saved in the browser's localStorage so they don't disappear when you refresh the page.
+
+Features
+Add new tasks
+Mark tasks as completed
+Delete tasks
+Filter tasks (All/Active/Completed)
+Tasks save automatically
+Dark theme with yellow highlights
+
+Works on mobile and desktop
+
+How to Use
+Open index.html in your web browser
+Type a task in the input field
+Press Enter or click "Add"
+Click the checkbox to mark a task complete
+Click the trash icon to delete a task
+Use the filter buttons to show different views
+
+Files Included
+index.html - The main HTML file
+style.css - All the styling
+script.js - All the JavaScript code
+
+What I Learned
+How to use JavaScript to make web pages interactive
+How to save data in the browser (localStorage)
+How to handle user events (clicks, keyboard)
+How to make a responsive design
+How to debug JavaScript code
+
+Challenges I Faced
+Getting the delete buttons to work on new tasks
+Making sure tasks save properly
+Understanding event delegation
+Making it work on mobile phones
+
+How I Solved Them
+Used event delegation for dynamic elements
+Tested localStorage with console.log()
+Looked up examples online
+Asked for help when stuck
+
+Requirements Met
+ Add tasks with Enter key and button
+ Mark tasks complete (with strikethrough)
+ Delete tasks individually
+ Show how many tasks are left
+ Save tasks between page refreshes
+ Filter tasks (All/Active/Completed)
+ Clean, readable code
+ Works on different screen sizes
+
+Extra Features Added
+ Double-click to edit tasks
+ Dark/light theme toggle
+Keyboard shortcuts (1, 2, 3 for filters)
+ Sample tasks button for testing
+ Error messages for empty input
+
+Testing Instructions
+Open the app in Chrome or Firefox
+Add a few tasks
+Mark some as complete
+Delete a task
+Try the filter buttons
+Refresh the page to see tasks are saved
+Try on mobile or resize browser
+
+Code Notes
+I used comments to explain difficult parts
+The code is organized into functions
+I tried to use meaningful variable names
+There might be some bugs I didn't find
+
+Future Improvements
+If I had more time, I would add:
+Due dates for tasks
+Drag and drop to reorder
+Categories for tasks
+Share tasks with others
+
+Credits
+Icons from Font Awesome
+Color scheme inspired by JavaScript
+Help from online tutorials and documentation
+
+Declaration
+I confirm that this is my own work, except where I have acknowledged help from other sources.
+
+RUTH TARIKU
