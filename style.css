@@ -119,7 +119,7 @@ header p {
     color: var(--danger);
     min-height: 20px;
     padding: 5px 10px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     opacity: 0;
     transition: opacity 0.3s;
 }
@@ -151,7 +151,7 @@ header p {
     display: flex;
     gap: 20px;
     color: var(--text-dim);
-    font-size: 0.95rem;
+    font-size: 0.94rem;
 }
 
 .stats span span {
@@ -463,3 +463,4 @@ input:focus-visible {
     outline: 2px solid var(--js-yellow);
     outline-offset: 2px;
 }
+
